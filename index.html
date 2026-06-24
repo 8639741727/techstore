@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://assets.adobedtm.com/83206ba1ed8f/a1f0eb867634/launch-e350af4a2689-development.min.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>TechStore</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                  <a href="cart.html">
+                      Cart (<span id="cart-count">0</span>)
+                  </a>
+              </li>
+            </ul>
+        </nav>
+       
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Latest Electronics Collection</h2>
+            <p>Discover smartphones, laptops and accessories.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150">
+                <h3>Smartphones</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150">
+                <h3>Laptops</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200x150">
+                <h3>Accessories</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200">
+                <h3>iPhone 16 Pro</h3>
+                <p>$1199</p>
+                <button onclick="addToCart('iPhone 16 Pro',1199)">
+                  Add To Cart
+              </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200">
+                <h3>Samsung S25</h3>
+                <p>$999</p>
+                <button onclick="addToCart('Samsung S25',999)">
+                  Add To Cart
+              </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200">
+                <h3>MacBook Air</h3>
+                <p>$1299</p>
+                <button onclick="addToCart('MacBook Air',1299)">
+                  Add To Cart
+              </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Choose Us -->
+    <section class="features">
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-box">
+                <h3>Fast Delivery</h3>
+                <p>Get products delivered quickly.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Secure Payment</h3>
+                <p>100% safe and secure transactions.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>24/7 Support</h3>
+                <p>Dedicated customer support.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <h2>Subscribe to Newsletter</h2>
+
+        <input type="email" placeholder="Enter email">
+        <button>Subscribe</button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div>
+            <h3>TechStore</h3>
+            <p>Your one stop electronics store.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <p>Home</p>
+            <p>Products</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>support@techstore.com</p>
+            <p>+91 9876543210</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

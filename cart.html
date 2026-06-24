@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://assets.adobedtm.com/83206ba1ed8f/a1f0eb867634/launch-e350af4a2689-development.min.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <h1>TechStore</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+
+            <li>
+                <a href="cart.html">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </li>
+
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Cart Section -->
+<section>
+
+    <h2>Shopping Cart</h2>
+
+    <table class="cart-table">
+
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="cart-items">
+
+            <!-- JavaScript will populate rows here -->
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- Order Summary -->
+<section class="order-summary">
+
+    <h2>Order Summary</h2>
+
+    <p>
+        Subtotal :
+        $<span id="subtotal">0</span>
+    </p>
+
+    <p>
+        Tax :
+        $<span id="tax">0</span>
+    </p>
+
+    <h3>
+        Total :
+        $<span id="grand-total">0</span>
+    </h3>
+
+    <br>
+
+    <button class="checkout-btn"
+    onclick="window.location.href='checkout.html'">
+
+        Proceed To Checkout
+
+    </button>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <div>
+        <h3>TechStore</h3>
+        <p>Your one-stop electronics store.</p>
+    </div>
+
+    <div>
+        <h3>Quick Links</h3>
+        <p>Home</p>
+        <p>Products</p>
+        <p>Contact</p>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <p>support@techstore.com</p>
+        <p>+91 9876543210</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

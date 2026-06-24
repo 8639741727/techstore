@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://assets.adobedtm.com/83206ba1ed8f/a1f0eb867634/launch-e350af4a2689-development.min.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <h1>TechStore</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="cart.html">
+                  Cart (<span id="cart-count">0</span>)
+              </a>
+          </li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Product Details -->
+<section class="product-details">
+
+    <div class="product-image">
+        <img src="https://via.placeholder.com/500" alt="iPhone 16 Pro">
+    </div>
+
+    <div class="product-info">
+
+        <h1>iPhone 16 Pro</h1>
+
+        <h3>★★★★★ (4.8)</h3>
+
+        <h2>$1199</h2>
+
+        <p>
+            Experience powerful performance with the latest Apple A18 Pro chip,
+            stunning display, and exceptional camera quality.
+        </p>
+
+        <h3>Specifications</h3>
+
+        <ul>
+            <li>256 GB Storage</li>
+            <li>6.7-inch Display</li>
+            <li>48 MP Camera</li>
+            <li>5000 mAh Battery</li>
+            <li>5G Support</li>
+        </ul>
+
+        <br>
+
+        <label>Quantity:</label>
+        <input type="number" value="1" min="1">
+
+        <br><br>
+
+        <button class="cart-btn">Add To Cart</button>
+
+        <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+</section>
+
+
+<!-- Related Products -->
+<section>
+
+    <h2>Related Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Samsung Galaxy S25</h3>
+            <p>$999</p>
+            <button onclick="addToCart('Samsung Galaxy S25',999)">
+              Add To Cart
+          </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Google Pixel 10</h3>
+            <p>$899</p>
+            <button onclick="addToCart('Google Pixel 10',899)">
+              Add To Cart
+          </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200">
+            <h3>OnePlus 13</h3>
+            <p>$799</p>
+            <button onclick="addToCart('OnePlus 13',799)">
+              Add To Cart
+          </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <div>
+        <h3>TechStore</h3>
+        <p>Your one-stop electronics store.</p>
+    </div>
+
+    <div>
+        <h3>Quick Links</h3>
+        <p>Home</p>
+        <p>Products</p>
+        <p>Contact</p>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <p>support@techstore.com</p>
+        <p>+91 9876543210</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
