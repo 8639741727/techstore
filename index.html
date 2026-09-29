@@ -182,27 +182,35 @@
 
 
     <!-- Footer -->
-    <footer>
+       <!-- Footer (added late to simulate a slow render) -->
+    <div id="footer-placeholder"></div>
 
-        <div>
-            <h3>TechStore</h3>
-            <p>Your one stop electronics store.</p>
-        </div>
+    <script>
+      var FOOTER_DELAY = 3000; // milliseconds
 
-        <div>
-            <h3>Quick Links</h3>
-            <p>Home</p>
-            <p>Products</p>
-            <p>Contact</p>
-        </div>
+      setTimeout(function () {
+        var footer = document.createElement('footer');
+        footer.innerHTML =
+          '<div>' +
+            '<h3>TechStore</h3>' +
+            '<p>Your one stop electronics store.</p>' +
+          '</div>' +
+          '<div>' +
+            '<h3>Quick Links</h3>' +
+            '<p>Home</p>' +
+            '<p>Products</p>' +
+            '<p>Contact</p>' +
+          '</div>' +
+          '<div>' +
+            '<h3>Contact</h3>' +
+            '<p>support@techstore.com</p>' +
+            '<p>+91 9876543210</p>' +
+          '</div>';
 
-        <div>
-            <h3>Contact</h3>
-            <p>support@techstore.com</p>
-            <p>+91 9876543210</p>
-        </div>
-
-    </footer>
-    <script src="script.js"></script>
+        document.getElementById('footer-placeholder').replaceWith(footer);
+        console.log('Footer added at (ms):', Math.round(performance.now()));
+      }, FOOTER_DELAY);
+    </script> 
+  <script src="script.js"></script>
 </body>
 </html>
